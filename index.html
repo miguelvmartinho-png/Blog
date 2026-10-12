@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog de Culinária</title>
+    
+    <!-- Google Fonts: Serif para Títulos e Sans-serif para o Corpo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Xanh+Mono:ital@0;1&family=Zen+Dots&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS Externo -->
+    
+</head>
+<body>
+
+    <header class="main-header">
+        <!-- h1: Título principal do Blog -->
+        <h1>Sabores & Histórias</h1>
+        <p>Explorando a gastronomia de forma simples e prática</p>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <header class="post-header">
+                <!-- h2: Título do Artigo -->
+                <h2>A Arte do Pão Caseiro Perfeito</h2>
+                <div class="meta-info">Por Mariana Costa • 12 de Outubro de 2026</div>
+            </header>
+
+            <section class="post-content">
+                <p>Fazer pão em casa é uma das experiências mais terapêuticas e recompensadoras que existem na cozinha. O aroma que se espalha pela casa enquanto a massa assa traz um conforto imediato e memórias afetivas.</p>
+
+                <!-- h3: Subtítulo do conteúdo -->
+                <h3>Por que a fermentação lenta importa?</h3>
+                <p>A paciência é o ingrediente secreto. Deixar a massa descansar por mais tempo permite que os sabores se desenvolvam de forma mais profunda, além de melhorar significativamente a textura do miolo e criar aquela casca crocante irresistível.</p>
+
+                <h3>Os três pilares do sucesso</h3>
+                <p>Para começar hoje mesmo, você só precisa dominar três variáveis fundamentais: a hidratação correta da farinha, a temperatura do ambiente durante o descanso e o tempo exato de forno. Com prática, você nunca mais vai querer comprar pão industrializado.</p>
+            </section>
+
+            <footer class="post-footer">
+                <a href="#" class="btn-read-more">Ver receita completa →</a>
+            </footer>
+        </article>
+    </main>
+    <style>
+        :root {
+    --color-primary: #2d5a27;          /* 1. HEX (Verde Oliva Escuro) */
+    --color-accent: rgb(211, 84, 0);    /* 2. RGB (Laranja Queimado) */
+    --color-text: hsl(0, 0%, 20%);       /* 3. HSL (Grafite Escuro) */
+    --color-bg: #faf9f6;
+}
+
+/* Configurações Gerais */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    /* Corpo do texto em Google Font Sans-serif */
+    font-family: "comic-relief-regular";
+    /* Linha-altura confortável para leitura */
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Hierarquia de Headings (Títulos em Google Font Serif) */
+h1{
+     font-family:serif;
+    color: var(--color-primary);
+    margin-top: 0;
+}
+ h2, h3 {
+    font-family: sans-serif;
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+/* h1: Topo da página */
+.main-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f0eee7;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Estrutura do Post */
+.post {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* h2: Título principal do artigo */
+.post-header h2 {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.meta-info {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* h3: Subtítulos dentro do texto */
+.post-content h3 {
+    font-size: 1.5rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--color-accent);
+    padding-left: 12px;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+/* Botão utilizando a cor Accent */
+.btn-read-more {
+    display: inline-block;
+    color: #ffffff;
+    background-color: var(--color-accent);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn-read-more:hover {
+    background-color: rgb(180, 70, 0);
+}
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+.zen-dots-regular {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.xanh-mono-regular {
+  font-family: "Xanh Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.xanh-mono-regular-italic {
+  font-family: "Xanh Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+    </style>
+</body>
+</html>
